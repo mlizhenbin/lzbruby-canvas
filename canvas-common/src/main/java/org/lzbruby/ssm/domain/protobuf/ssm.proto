@@ -1,0 +1,13 @@
+package org.lzbruby.ssm.domain.protobuf;
+
+option java_package = "org.lzbruby.ssm.domain.protobuf";
+
+message MapEntity {
+    optional string key = 1;
+    optional string value = 2;
+}
+
+message Session {
+    optional int64 sessionId = 1;
+    repeated MapEntity attributes = 2;
+}
