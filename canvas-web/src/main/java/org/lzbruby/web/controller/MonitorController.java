@@ -46,9 +46,9 @@ public class MonitorController {
 
         for (int i = 0; i < showLine; i++) {
             MonitorTradeDO monitorDO = new MonitorTradeDO();
-            monitorDO.setTotalDailyOrderNum(String.valueOf(Math.abs(random.nextInt(1000000))));
-            monitorDO.setFiveMinuteOrderNum(String.valueOf(Math.abs(random.nextInt(10000))));
-            monitorDO.setOneMinuteResponseTime(String.valueOf(Math.abs(random.nextInt(5000))));
+            monitorDO.setTotalDailyOrderNum(String.valueOf(Math.abs(random.nextInt(800000))));
+            monitorDO.setFiveMinuteOrderNum(String.valueOf(Math.abs(random.nextInt(8000))));
+            monitorDO.setOneMinuteResponseTime(String.valueOf(Math.abs(random.nextInt(3000))));
             monitorDO.setFiveMinuteWarnTimes(String.valueOf(Math.abs(random.nextInt(5))));
             monitorDOs.add(monitorDO);
         }
@@ -68,12 +68,12 @@ public class MonitorController {
     public Object monitorTrade(ModelMap modelMap) throws JsonParseException {
         Random random = new Random();
         MonitorTradeAndResponseDO monitorDO = new MonitorTradeAndResponseDO();
-        monitorDO.setTotalDailyOrderNum(String.valueOf(Math.abs(random.nextInt(1000000))));
-        monitorDO.setFiveMinuteOrderNum(String.valueOf(Math.abs(random.nextInt(10000))));
-        monitorDO.setOneMinuteResponseTime(String.valueOf(Math.abs(random.nextInt(5000))));
+        monitorDO.setTotalDailyOrderNum(String.valueOf(Math.abs(random.nextInt(800000))));
+        monitorDO.setFiveMinuteOrderNum(String.valueOf(Math.abs(random.nextInt(8000))));
+        monitorDO.setOneMinuteResponseTime(String.valueOf(Math.abs(random.nextInt(3000))));
 //        monitorDO.setFiveMinuteWarnTimes(String.valueOf(Math.abs(random.nextInt(5))));
         monitorDO.setFiveMinuteWarnTimes("0");
-        monitorDO.setResponseTime(Math.abs(random.nextInt(5000)));
+        monitorDO.setResponseTime(Math.abs(random.nextInt(3000)));
         return JacksonUtil.beanToJson(monitorDO);
     }
 
@@ -92,7 +92,7 @@ public class MonitorController {
         Random random = new Random();
 
         for (int i = 0; i < showLine; i++) {
-            responseTimes.add(Math.abs(random.nextInt(5000)));
+            responseTimes.add(Math.abs(random.nextInt(3000)));
         }
 
         return JacksonUtil.beanToJson(responseTimes);
