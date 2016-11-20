@@ -13,27 +13,27 @@
            http://www.springframework.org/schema/aop
            http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
-    <aop:aspectj-autoproxy/>
+    <!--<aop:aspectj-autoproxy/>-->
 
-    <import resource="classpath:simplesm-context.xml"/>
+    <!--<import resource="classpath:simplesm-context.xml"/>-->
 
-    <bean name="defaultMemcachedClient" class="com.google.code.ssm.CacheFactory">
-        <property name="cacheClientFactory">
-            <bean class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl"/>
-        </property>
-        <property name="addressProvider">
-            <bean class="com.google.code.ssm.config.DefaultAddressProvider">
-                <property name="address" value="192.168.8.6:11211, 192.168.8.6:11311"/>
-            </bean>
-        </property>
-        <property name="configuration">
-            <bean class="com.google.code.ssm.providers.CacheConfiguration">
-                <property name="consistentHashing" value="true"/>
-            </bean>
-        </property>
-        <!--<property name="initializeTranscoders" value="false"/>-->
-        <property name="customTranscoder" ref="protobufCacheTranscoder"/>
-    </bean>
+    <!--<bean name="defaultMemcachedClient" class="com.google.code.ssm.CacheFactory">-->
+        <!--<property name="cacheClientFactory">-->
+            <!--<bean class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl"/>-->
+        <!--</property>-->
+        <!--<property name="addressProvider">-->
+            <!--<bean class="com.google.code.ssm.config.DefaultAddressProvider">-->
+                <!--<property name="address" value="192.168.8.6:11211, 192.168.8.6:11311"/>-->
+            <!--</bean>-->
+        <!--</property>-->
+        <!--<property name="configuration">-->
+            <!--<bean class="com.google.code.ssm.providers.CacheConfiguration">-->
+                <!--<property name="consistentHashing" value="true"/>-->
+            <!--</bean>-->
+        <!--</property>-->
+        <!--&lt;!&ndash;<property name="initializeTranscoders" value="false"/>&ndash;&gt;-->
+        <!--<property name="customTranscoder" ref="protobufCacheTranscoder"/>-->
+    <!--</bean>-->
 
-    <bean name="protobufCacheTranscoder" class="org.lzbruby.ssm.transcoder.ProtobufCacheTranscoder"></bean>
+    <!--<bean name="protobufCacheTranscoder" class="org.lzbruby.ssm.transcoder.ProtobufCacheTranscoder"></bean>-->
 </beans>

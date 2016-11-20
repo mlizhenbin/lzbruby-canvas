@@ -10,17 +10,17 @@
                         http://www.dangdang.com/schema/ddframe/job
                         http://www.dangdang.com/schema/ddframe/job/job.xsd
                         ">
-    <!--配置作业注册中心 -->
-    <reg:zookeeper id="regCenter" serverLists="localhost:2181"
-                   namespace="wms-job" baseSleepTimeMilliseconds="1000"
-                   maxSleepTimeMilliseconds="3000" maxRetries="3"/>
+    <!--&lt;!&ndash;配置作业注册中心 &ndash;&gt;-->
+    <!--<reg:zookeeper id="regCenter" serverLists="localhost:2181"-->
+                   <!--namespace="wms-job" baseSleepTimeMilliseconds="1000"-->
+                   <!--maxSleepTimeMilliseconds="3000" maxRetries="3"/>-->
 
-    <!-- 配置作业-->
-    <job:bean id="helloWorldElasticJob" class="org.lzbruby.biz.job.HelloWorldElasticJob"
-              regCenter="regCenter" cron="0/1 * * * * ?"
-              shardingTotalCount="1" shardingItemParameters="0=A,1=B"/>
+    <!--&lt;!&ndash; 配置作业&ndash;&gt;-->
+    <!--<job:bean id="helloWorldElasticJob" class="org.lzbruby.biz.job.HelloWorldElasticJob"-->
+              <!--regCenter="regCenter" cron="0/1 * * * * ?"-->
+              <!--shardingTotalCount="1" shardingItemParameters="0=A,1=B"/>-->
 
-    <job:bean id="helloWorldElasticJob2" class="org.lzbruby.biz.job.HelloWorldElasticJob2"
-              regCenter="regCenter" cron="0/5 * * * * ?"
-              shardingTotalCount="1" shardingItemParameters="0=A,1=B"/>
+    <!--<job:bean id="helloWorldElasticJob2" class="org.lzbruby.biz.job.HelloWorldElasticJob2"-->
+              <!--regCenter="regCenter" cron="0/5 * * * * ?"-->
+              <!--shardingTotalCount="1" shardingItemParameters="0=A,1=B"/>-->
 </beans>
