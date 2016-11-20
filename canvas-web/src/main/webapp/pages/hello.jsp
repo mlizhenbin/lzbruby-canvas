@@ -20,6 +20,7 @@
         tooltip: {
             trigger: 'axis',
             formatter: function (params, ticket, callback) {
+                console.log(params);
                 return params[0].data.tooltip.formatter;
             }
         },
@@ -132,7 +133,7 @@
                 type: 'line',
                 itemStyle: {
                     normal: {
-                        color: '#ec9c58'
+                        color: '#88e177'
                     }
                 },
                 data: (function () {
