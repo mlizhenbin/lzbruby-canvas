@@ -211,7 +211,7 @@
         option.xAxis[0].data.push(axisData);
 
         myChart.setOption(option);
-    }, 1000);
+    }, 5000);
 
 
 </script>
