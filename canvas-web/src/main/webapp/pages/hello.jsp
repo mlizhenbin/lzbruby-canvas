@@ -51,10 +51,6 @@
                 boundaryGap: true,
                 data: (function () {
                     var res = [];
-                    var len = 36;
-                    while (len--) {
-                        res.push(len + 1);
-                    }
                     return res;
                 })()
             }
@@ -212,11 +208,9 @@
 
         option.xAxis[0].data.shift();
         option.xAxis[0].data.push(axisData);
-        option.xAxis[1].data.shift();
-        option.xAxis[1].data.push(app.count++);
 
         myChart.setOption(option);
-    }, 5000);
+    }, 1000);
 
 
 </script>
