@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>销售清单打印</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <script language="javascript" src="js/LodopFuncs.js"></script>
+    <object id="LODOP_OB" classid="clsid:2105C259-1E0C-4534-8141-A753534CB4CA" width=0 height=0>
+        <embed id="LODOP_EM" type="application/x-print-lodop" width=0 height=0></embed>
+    </object>
+
+    <script type="text/javascript">
+        //        var LODOP = getLodop(document.getElementById('LODOP_OB'), document.getElementById('LODOP_EM'));
+        var LODOP = getLodop();
+
+        function CheckIsInstall() {
+            try {
+                var LODOP = getLodop();
+                if (LODOP.VERSION) {
+                    if (LODOP.CVERSION)
+                        alert("当前有C-Lodop云打印可用!\n C-Lodop版本:" + LODOP.CVERSION + "(内含Lodop" + LODOP.VERSION + ")");
+                    else
+                        alert("本机已成功安装了Lodop控件！\n 版本号:" + LODOP.VERSION);
+
+                }
+            } catch (err) {
+            }
+        }
+
+        function print() {
+            LODOP.PREVIEW();
+//            LODOP.PRINT();
+        }
+
+    </script>
+
+</head>
+
+<input type="button" value="打印" onclick="print();">
+
+<body>
+
+</body>
+</html>
