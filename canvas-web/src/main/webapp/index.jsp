@@ -157,13 +157,13 @@
                         </tbody>
                     </table>
                 </fieldset>
-            </form>
+            </class="table table-bordered" contenteditable="true"form>
 
             <br>
             <br>
             <fieldset>
                 <legend>销售清单商品信息：</legend>
-                <table class="table">
+                <table class="table table-bordered" contenteditable="true">
                     <thead>
                     <tr>
                         <th>
@@ -182,7 +182,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>
+                        <td rowspan="2">
                             1
                         </td>
                         <td>
@@ -195,10 +195,7 @@
                             Default
                         </td>
                     </tr>
-                    <tr class="success">
-                        <td>
-                            1
-                        </td>
+                    <tr>
                         <td>
                             TB - Monthly
                         </td>
@@ -207,48 +204,6 @@
                         </td>
                         <td>
                             Approved
-                        </td>
-                    </tr>
-                    <tr class="error">
-                        <td>
-                            2
-                        </td>
-                        <td>
-                            TB - Monthly
-                        </td>
-                        <td>
-                            02/04/2012
-                        </td>
-                        <td>
-                            Declined
-                        </td>
-                    </tr>
-                    <tr class="warning">
-                        <td>
-                            3
-                        </td>
-                        <td>
-                            TB - Monthly
-                        </td>
-                        <td>
-                            03/04/2012
-                        </td>
-                        <td>
-                            Pending
-                        </td>
-                    </tr>
-                    <tr class="info">
-                        <td>
-                            4
-                        </td>
-                        <td>
-                            TB - Monthly
-                        </td>
-                        <td>
-                            04/04/2012
-                        </td>
-                        <td>
-                            Call in to confirm
                         </td>
                     </tr>
                     </tbody>
