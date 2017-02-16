@@ -183,7 +183,7 @@
                 <table width="100%" style="height: auto">
                     <tbody>
                     <tr>
-                        <td style="text-align: right">本页合计人民币（大写）：</td>
+                        <td style="text-align: right">本页合计人民币（大写）:</td>
                         <td><input type="text" value=""></td>
                         <td style="text-align: right">小写:</td>
                         <td><input type="text" value=""></td>
