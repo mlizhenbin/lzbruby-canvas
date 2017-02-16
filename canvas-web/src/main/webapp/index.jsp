@@ -75,42 +75,42 @@
                 </legend>
                 <table class="table table-bordered table-condensed" contenteditable="true">
                     <thead>
-                    <tr style="background-color: #c1e2b3">
-                        <th>商品编码/细单号</th>
-                        <th>品名/规格/剂型/产地</th>
-                        <th>生产厂商</th>
-                        <th>包装</th>
-                        <th>单位</th>
-                        <th>数量</th>
-                        <th>销售单价</th>
-                        <th>金额</th>
-                        <th>批号/效期</th>
-                        <th>批准文号</th>
-                        <th>仓库信息</th>
+                    <tr style="background-color: #c1e2b3; " >
+                        <th style="text-align: center">商品编码/细单号</th>
+                        <th style="text-align: center">品名/规格/剂型/产地</th>
+                        <th style="text-align: center">生产厂商</th>
+                        <th style="text-align: center">包装</th>
+                        <th style="text-align: center">单位</th>
+                        <th style="text-align: center">数量</th>
+                        <th style="text-align: center">销售单价</th>
+                        <th style="text-align: center">金额</th>
+                        <th style="text-align: center">批号/效期</th>
+                        <th style="text-align: center">批准文号</th>
+                        <th style="text-align: center">仓库信息</th>
                     </tr>
                     </thead>
                     <tbody id="_show_goods_info">
                     <tr class="_goods_info">
-                        <td width="10%"><input type="text" style="width:140px;" value="☆   "></td>
+                        <td width="10%"><input class="_goods_code" type="text" style="width:140px;" value="☆   "></td>
                         <td rowspan="2" width="20%">
-                            <textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea>
+                            <textarea class="_ping_size_addr" style="width: 100%; height: 100%" cols="9" rows="3"></textarea>
                         </td>
                         <td rowspan="2" width="15%">
-                            <textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea>
+                            <textarea class="_productor" style="width: 100%; height: 100%" cols="9" rows="3"></textarea>
                         </td>
-                        <td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
-                        <td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
-                        <td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
-                        <td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
-                        <td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
-                        <td width="10%"><input type="text" style="width: 140px;" value=""></td>
-                        <td width="10%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
-                        <td width="10%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="5%" rowspan="2"><textarea class="_package" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="5%" rowspan="2"><textarea class="_unit" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="5%" rowspan="2"><textarea class="_qrt" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="5%" rowspan="2"><textarea class="_price" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="5%" rowspan="2"><textarea class="_sale_fee" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="10%"><input class="_banch_no" type="text" style="width: 140px;" value=""></td>
+                        <td width="10%" rowspan="2"><textarea class="_check_no" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="10%" rowspan="2"><textarea class="_warehouse_info" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
                     </tr>
                     <tr class="_goods_info">
-                        <td><input type="text" style="width:140px;" value=""></td>
+                        <td><input class="_detail_no" type="text" style="width:140px;" value=""></td>
                         <td>
-                            <input type="text" style="width:140px;" value="" onFocus="WdatePicker({dateFmt:'yyyy/MM/dd',alwaysUseStartDate:true})">
+                            <input class="_active_date" type="text" style="width:140px;" value="" onFocus="WdatePicker({dateFmt:'yyyy/MM/dd',alwaysUseStartDate:true})">
                         </td>
                     </tr>
                     </tbody>
@@ -158,7 +158,7 @@
             <br>
             <div style="text-align: center">
                 <button class="btn btn-primary" type="button">打印</button>
-                <button class="btn btn-success" type="button" onclick="review();">打印预览</button>
+                <button id="doPrint" class="btn btn-success" type="button">打印预览</button>
                 <button class="btn  btn-info" type="reset">重置</button>
             </div>
         </form>

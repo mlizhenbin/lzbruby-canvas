@@ -12,30 +12,105 @@ $("#addGoods").click(function () {
 
     var goodsHTML =
         ' <tr class="_goods_info"> ' +
-            '<td width="10%"><input type="text" style="width:140px;" value="☆   "></td>' +
+            '<td width="10%"><input class="_goods_code" type="text" style="width:140px;" value="☆   "></td>' +
             '<td rowspan="2" width="20%">' +
-                '<textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea>'+
+                '<textarea class="_ping_size_addr" style="width: 100%; height: 100%" cols="9" rows="3"></textarea>'+
             '</td>' +
             '<td rowspan="2" width="15%">' +
-                '<textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea>' +
+                '<textarea class="_productor" style="width: 100%; height: 100%" cols="9" rows="3"></textarea>' +
              '</td>' +
-            '<td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
-            '<td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
-            '<td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
-            '<td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
-            '<td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
-            '<td width="10%"><input type="text" style="width: 140px;" value=""></td>'+
-            '<td width="10%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
-            '<td width="10%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
+            '<td width="5%" rowspan="2"><textarea class="_package" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
+            '<td width="5%" rowspan="2"><textarea class="_unit" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
+            '<td width="5%" rowspan="2"><textarea class="_qrt" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
+            '<td width="5%" rowspan="2"><textarea class="_price" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
+            '<td width="5%" rowspan="2"><textarea class="_sale_fee" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
+            '<td width="10%"><input class="_banch_no" type="text" style="width: 140px;" value=""></td>'+
+            '<td width="10%" rowspan="2"><textarea class="_check_no" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
+            '<td width="10%" rowspan="2"><textarea class="_warehouse_info" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
         '</tr>'+
         '<tr class="_goods_info">'+
-            '<td><input type="text" style="width:140px;" value=""></td>'+
+            '<td><input class="_detail_no"  type="text" style="width:140px;" value=""></td>'+
             '<td>'+
-                '<input type="text" style="width:140px;" value="" onFocus="WdatePicker({dateFmt:\'yyyy/MM/dd\',alwaysUseStartDate:true})">'+
+                '<input class="_active_date" type="text" style="width:140px;" value="" onFocus="WdatePicker({dateFmt:\'yyyy/MM/dd\',alwaysUseStartDate:true})">'+
             '</td>'+
         '</tr>';
     $("#_show_goods_info").append(goodsHTML);
 });
+
+$("#doPrint").on("click", function () {
+    var showGoodsInfo = $("#_show_goods_info").find('tr');
+    var goodsSize = showGoodsInfo.length;
+    if (goodsSize && goodsSize < 2) {
+        alert("请填写打印商品信息！")
+        return;
+    }
+
+    showGoodsInfo.each(function () {
+        var _goods_code = $(this).find('._goods_code').val();
+        if (typeof(_goods_code) != "undefined") {
+            alert(_goods_code);
+        }
+
+        var _ping_size_addr = $(this).find('._ping_size_addr').val();
+        if (typeof(_ping_size_addr) != "undefined") {
+            alert(_ping_size_addr);
+        }
+        var _productor = $(this).find('._productor').val();
+        if (typeof(_productor) != "undefined") {
+            alert(_productor);
+        }
+
+        var _package = $(this).find('._package').val();
+        if (typeof(_package) != "undefined") {
+            alert(_package);
+        }
+
+        var _unit = $(this).find('._unit').val();
+        if (typeof(_unit) != "undefined") {
+            alert(_unit);
+        }
+
+        var _qrt = $(this).find('._qrt').val();
+        if (typeof(_qrt) != "undefined") {
+            alert(_qrt);
+        }
+
+        var _price = $(this).find('._price').val();
+        if (typeof(_price) != "undefined") {
+            alert(_price);
+        }
+
+        var _sale_fee = $(this).find('._sale_fee').val();
+        if (typeof(_sale_fee) != "undefined") {
+            alert(_sale_fee);
+        }
+
+        var _banch_no = $(this).find('._banch_no').val();
+        if (typeof(_banch_no) != "undefined") {
+            alert(_banch_no);
+        }
+
+        var _check_no = $(this).find('._check_no').val();
+        if (typeof(_check_no) != "undefined") {
+            alert(_check_no);
+        }
+
+        var _warehouse_info = $(this).find('._warehouse_info').val();
+        if (typeof(_warehouse_info) != "undefined") {
+            alert(_warehouse_info);
+        }
+
+        var _detail_no = $(this).find('._detail_no').val();
+        if (typeof(_detail_no) != "undefined") {
+            alert(_detail_no);
+        }
+
+        var _active_date = $(this).find('._active_date').val();
+        if (typeof(_active_date) != "undefined") {
+            alert(_active_date);
+        }
+    })
+})
 
 var isIE = (navigator.userAgent.indexOf('MSIE') >= 0) || (navigator.userAgent.indexOf('Trident') >= 0);
 
