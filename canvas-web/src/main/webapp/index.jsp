@@ -15,8 +15,8 @@
 <body>
 <div class="container-fluid">
     <div class="span12">
-        <%--<h3 class="text-center">国药控股桂林有限公司</h3>--%>
-        <%--<h4 class="text-center">销售清单</h4>--%>
+        <h3 class="text-center">国药控股桂林有限公司</h3>
+        <h4 class="text-center">销售清单</h4>
         <form>
             <fieldset>
                 <legend>抬头信息：</legend>
