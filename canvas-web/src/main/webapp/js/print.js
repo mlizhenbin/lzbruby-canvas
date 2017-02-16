@@ -37,80 +37,18 @@ $("#addGoods").click(function () {
     $("#_show_goods_info").append(goodsHTML);
 });
 
-$("#doPrint").on("click", function () {
-    var showGoodsInfo = $("#_show_goods_info").find('tr');
-    var goodsSize = showGoodsInfo.length;
-    if (goodsSize && goodsSize < 2) {
-        alert("请填写打印商品信息！")
-        return;
-    }
-
-    showGoodsInfo.each(function () {
-        var _goods_code = $(this).find('._goods_code').val();
-        if (typeof(_goods_code) != "undefined") {
-            alert(_goods_code);
-        }
-
-        var _ping_size_addr = $(this).find('._ping_size_addr').val();
-        if (typeof(_ping_size_addr) != "undefined") {
-            alert(_ping_size_addr);
-        }
-        var _productor = $(this).find('._productor').val();
-        if (typeof(_productor) != "undefined") {
-            alert(_productor);
-        }
-
-        var _package = $(this).find('._package').val();
-        if (typeof(_package) != "undefined") {
-            alert(_package);
-        }
-
-        var _unit = $(this).find('._unit').val();
-        if (typeof(_unit) != "undefined") {
-            alert(_unit);
-        }
-
-        var _qrt = $(this).find('._qrt').val();
-        if (typeof(_qrt) != "undefined") {
-            alert(_qrt);
-        }
-
-        var _price = $(this).find('._price').val();
-        if (typeof(_price) != "undefined") {
-            alert(_price);
-        }
-
-        var _sale_fee = $(this).find('._sale_fee').val();
-        if (typeof(_sale_fee) != "undefined") {
-            alert(_sale_fee);
-        }
-
-        var _banch_no = $(this).find('._banch_no').val();
-        if (typeof(_banch_no) != "undefined") {
-            alert(_banch_no);
-        }
-
-        var _check_no = $(this).find('._check_no').val();
-        if (typeof(_check_no) != "undefined") {
-            alert(_check_no);
-        }
-
-        var _warehouse_info = $(this).find('._warehouse_info').val();
-        if (typeof(_warehouse_info) != "undefined") {
-            alert(_warehouse_info);
-        }
-
-        var _detail_no = $(this).find('._detail_no').val();
-        if (typeof(_detail_no) != "undefined") {
-            alert(_detail_no);
-        }
-
-        var _active_date = $(this).find('._active_date').val();
-        if (typeof(_active_date) != "undefined") {
-            alert(_active_date);
-        }
-    })
+$("#preview").on("click", function () {
+    var printHTML = buildPrintHTML();
+    var LODOP = buildLodop(printHTML);
+    LODOP.PREVIEW();
 })
+
+$("#print").on("click", function () {
+    var printHTML = buildPrintHTML();
+    var LODOP = buildLodop(printHTML);
+    LODOP.PRINT();
+})
+
 
 var isIE = (navigator.userAgent.indexOf('MSIE') >= 0) || (navigator.userAgent.indexOf('Trident') >= 0);
 
@@ -134,7 +72,7 @@ function getLodop() {
     }
 }
 
-function buildLodop() {
+function buildLodop(printHTML) {
     var LODOP = getLodop();
 
     LODOP.PRINT_INIT("销售清单");
@@ -226,7 +164,77 @@ function buildLodop() {
     return LODOP;
 }
 
-function review() {
-    var LODOP = buildLodop();
-    LODOP.PREVIEW();
+function buildPrintHTML() {
+    var showGoodsInfo = $("#_show_goods_info").find('tr');
+    var goodsSize = showGoodsInfo.length;
+    if (goodsSize && goodsSize < 2) {
+        alert("请填写打印商品信息！")
+        return;
+    }
+
+    showGoodsInfo.each(function () {
+        var _goods_code = $(this).find('._goods_code').val();
+        if (typeof(_goods_code) != "undefined") {
+            alert(_goods_code);
+        }
+
+        var _ping_size_addr = $(this).find('._ping_size_addr').val();
+        if (typeof(_ping_size_addr) != "undefined") {
+            alert(_ping_size_addr);
+        }
+        var _productor = $(this).find('._productor').val();
+        if (typeof(_productor) != "undefined") {
+            alert(_productor);
+        }
+
+        var _package = $(this).find('._package').val();
+        if (typeof(_package) != "undefined") {
+            alert(_package);
+        }
+
+        var _unit = $(this).find('._unit').val();
+        if (typeof(_unit) != "undefined") {
+            alert(_unit);
+        }
+
+        var _qrt = $(this).find('._qrt').val();
+        if (typeof(_qrt) != "undefined") {
+            alert(_qrt);
+        }
+
+        var _price = $(this).find('._price').val();
+        if (typeof(_price) != "undefined") {
+            alert(_price);
+        }
+
+        var _sale_fee = $(this).find('._sale_fee').val();
+        if (typeof(_sale_fee) != "undefined") {
+            alert(_sale_fee);
+        }
+
+        var _banch_no = $(this).find('._banch_no').val();
+        if (typeof(_banch_no) != "undefined") {
+            alert(_banch_no);
+        }
+
+        var _check_no = $(this).find('._check_no').val();
+        if (typeof(_check_no) != "undefined") {
+            alert(_check_no);
+        }
+
+        var _warehouse_info = $(this).find('._warehouse_info').val();
+        if (typeof(_warehouse_info) != "undefined") {
+            alert(_warehouse_info);
+        }
+
+        var _detail_no = $(this).find('._detail_no').val();
+        if (typeof(_detail_no) != "undefined") {
+            alert(_detail_no);
+        }
+
+        var _active_date = $(this).find('._active_date').val();
+        if (typeof(_active_date) != "undefined") {
+            alert(_active_date);
+        }
+    })
 }

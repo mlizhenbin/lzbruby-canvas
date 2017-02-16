@@ -157,8 +157,8 @@
             <br>
             <br>
             <div style="text-align: center">
-                <button class="btn btn-primary" type="button">打印</button>
-                <button id="doPrint" class="btn btn-success" type="button">打印预览</button>
+                <button id="print" class="btn btn-primary" type="button">打印</button>
+                <button id="preview" class="btn btn-success" type="button">打印预览</button>
                 <button class="btn  btn-info" type="reset">重置</button>
             </div>
         </form>
