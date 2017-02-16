@@ -210,6 +210,19 @@ function buildLodop() {
     LODOP.ADD_PRINT_TEXT("32mm", "200mm", "50mm", "50mm", "制单日期: " + _make_order_date);
     LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
 
+    var _cal_total_ZN = $("#_cal_total_ZN").val();
+    var _cal_total_en = $("#_cal_total_en").val();
+    var _make_order_person = $("#_make_order_person").val();
+    var _busi_order_person = $("#_busi_order_person").val();
+    var _consumer_sgin = $("#_consumer_sgin").val();
+    var _consumer_date = $("#_consumer_date").val();
+    var _check_person = $("#_check_person").val();
+    var _store_person = $("#_store_person").val();
+    var _transport_condition = $("#_transport_condition").val();
+    var _remark = $("#_remark").val();
+    var _send_person = $("#_send_person").val();
+    var _send_time = $("#_send_time").val();
+
     return LODOP;
 }
 

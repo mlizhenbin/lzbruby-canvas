@@ -123,33 +123,33 @@
                     <tbody>
                     <tr>
                         <td style="text-align: right">本页合计人民币（大写）:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_cal_total_ZN" type="text" value=""></td>
                         <td style="text-align: right">小写:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_cal_total_en" type="text" value=""></td>
                         <td style="text-align: right">制单人:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_make_order_person" type="text" value=""></td>
                         <td style="text-align: right">业务员:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input  id="_busi_order_person" type="text" value=""></td>
                     </tr>
                     <tr>
                         <td style="text-align: right">客户签收:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_consumer_sgin" type="text" value=""></td>
                         <td style="text-align: right">签收日期:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_consumer_date" type="text" value=""></td>
                         <td style="text-align: right">复合员:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_check_person" type="text" value=""></td>
                         <td style="text-align: right">保管员:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_store_person" type="text" value=""></td>
                     </tr>
                     <tr>
                         <td style="text-align: right">运输条件:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_transport_condition" type="text" value=""></td>
                         <td style="text-align: right">备注:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_remark" type="text" value=""></td>
                         <td style="text-align: right">送货人:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_send_person" type="text" value=""></td>
                         <td style="text-align: right">送货时间:</td>
-                        <td><input type="text" value=""></td>
+                        <td><input id="_send_time" type="text" value="" onFocus="WdatePicker({dateFmt:'yyyy/MM/dd HH',alwaysUseStartDate:true})"></td>
                     </tr>
                     </tbody>
                 </table>
