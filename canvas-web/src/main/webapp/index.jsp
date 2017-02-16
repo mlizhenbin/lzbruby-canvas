@@ -69,7 +69,10 @@
             </fieldset>
             <br><br>
             <fieldset>
-                <legend>商品信息：</legend>
+                <legend>商品信息：
+                    <button id="addGoods" class="btn btn-primary" type="button">新增</button>
+                    <button id="clearGoods" class="btn btn-warning" type="button">清除</button>
+                </legend>
                 <table class="table table-bordered table-condensed" contenteditable="true">
                     <thead>
                     <tr style="background-color: #c1e2b3">
@@ -86,8 +89,8 @@
                         <th>仓库信息</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
+                    <tbody id="_show_goods_info">
+                    <tr class="_goods_info">
                         <td width="10%"><input type="text" style="width:140px;" value="1☆   02197001"></td>
                         <td rowspan="2" width="20%">
                             <textarea style="width: 100%; height: 100%" cols="9"
@@ -96,36 +99,21 @@
                         <td rowspan="2" width="15%">
                             <textarea style="width: 100%; height: 100%" cols="9" rows="3">广东众生药业股份有限公司</textarea>
                         </td>
-                        <td width="5%" rowspan="2"><input type="text" style="width: 65px;" value="1"></td>
-                        <td width="5%" rowspan="2"><input type="text" style="width: 65px;" value="1"></td>
-                        <td width="5%" rowspan="2"><input type="text" style="width: 65px;" value="1"></td>
-                        <td width="5%" rowspan="2"><input type="text" style="width: 65px;" value="1"></td>
-                        <td width="5%" rowspan="2"><input type="text" style="width: 65px;" value="1"></td>
-                        <td width="10%"><input type="text" style="width: 140px;" value="1"></td>
-                        <td width="10%" rowspan="2"><input type="text" style="width: 140px;" value="1"></td>
-                        <td width="10%" rowspan="2"><input type="text" style="width: 140px;" value="1"></td>
+                        <td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="10%"><input type="text" style="width: 140px;" value=""></td>
+                        <td width="10%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="10%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
                     </tr>
-                    <tr>
+                    <tr class="_goods_info">
                         <td><input type="text" style="width:140px;" value=""></td>
-                        <td><input type="text" style="width:140px;" value="1"></td>
+                        <td>
+                            <input type="text" style="width:140px;" value="" onFocus="WdatePicker({dateFmt:'yyyy/MM/dd',alwaysUseStartDate:true})">
+                        </td>
                     </tr>
-                    <%--<tr>--%>
-                    <%--<td>1☆ 02197001</td>--%>
-                    <%--<td rowspan="2">复方血栓胶囊/0.5g*30粒/胶囊剂量/粤众生</td>--%>
-                    <%--<td rowspan="2">广东众生药业股份有限公司</td>--%>
-                    <%--<td rowspan="2">300</td>--%>
-                    <%--<td rowspan="2">盒</td>--%>
-                    <%--<td rowspan="2">30</td>--%>
-                    <%--<td rowspan="2">21.77</td>--%>
-                    <%--<td rowspan="2">653.10</td>--%>
-                    <%--<td>160729</td>--%>
-                    <%--<td rowspan="2">国药准字Z20030017</td>--%>
-                    <%--<td rowspan="2"></td>--%>
-                    <%--</tr>--%>
-                    <%--<tr>--%>
-                    <%--<td>101005170000229</td>--%>
-                    <%--<td>2019/01/29</td>--%>
-                    <%--</tr>--%>
                     </tbody>
                 </table>
             </fieldset>
@@ -178,6 +166,6 @@
     </div>
 </div>
 </div>
-
 </body>
+<script src="js/print.js"></script>
 </html>
