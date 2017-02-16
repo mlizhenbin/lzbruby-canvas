@@ -9,13 +9,14 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/My97DatePicker/WdatePicker.js"></script>
+
 </head>
 
 <body>
 <div class="container-fluid">
     <div class="span12">
-        <h3 class="text-center">国药控股桂林有限公司</h3>
-        <h4 class="text-center">销售清单</h4>
+        <%--<h3 class="text-center">国药控股桂林有限公司</h3>--%>
+        <%--<h4 class="text-center">销售清单</h4>--%>
         <form>
             <fieldset>
                 <legend>抬头信息：</legend>
@@ -29,7 +30,8 @@
                         <td style="text-align: right">总 金 额:</td>
                         <td><input id="_total_fee" type="text" value=""></td>
                         <td style="text-align: right">出库日期:</td>
-                        <td><input id="_unhouse_datetime" type="text" value="" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})"></td>
+                        <td><input id="_unhouse_datetime" type="text" value=""
+                                   onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})"></td>
                     </tr>
                     <tr>
                         <td style="text-align: right">订单组号:</td>
@@ -49,7 +51,8 @@
                         <td style="text-align: right">业务类型:</td>
                         <td><input id="_busi_type" type="text" value=""></td>
                         <td style="text-align: right">制单日期:</td>
-                        <td><input id="_make_order_date" type="text" value="" onFocus="WdatePicker({dateFmt:'yyyy/MM/dd',alwaysUseStartDate:true})"></td>
+                        <td><input id="_make_order_date" type="text" value=""
+                                   onFocus="WdatePicker({dateFmt:'yyyy/MM/dd',alwaysUseStartDate:true})"></td>
                     </tr>
                     <tr>
                         <td style="text-align: right">客 户:</td>
@@ -70,7 +73,6 @@
                 <table class="table table-bordered table-condensed" contenteditable="true">
                     <thead>
                     <tr style="background-color: #c1e2b3">
-                        <th>序号</th>
                         <th>商品编码/细单号</th>
                         <th>品名/规格/剂型/产地</th>
                         <th>生产厂商</th>
@@ -86,95 +88,44 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td rowspan="2">1</td>
-                        <td>1☆ 02197001</td>
-                        <td rowspan="2">复方血栓胶囊/0.5g*30粒/胶囊剂量/粤众生</td>
-                        <td rowspan="2">广东众生药业股份有限公司</td>
-                        <td rowspan="2">300</td>
-                        <td rowspan="2">盒</td>
-                        <td rowspan="2">30</td>
-                        <td rowspan="2">21.77</td>
-                        <td rowspan="2">653.10</td>
-                        <td>160729</td>
-                        <td rowspan="2">国药准字Z20030017</td>
-                        <td rowspan="2"></td>
+                        <td width="10%"><input type="text" style="width:140px;" value="1☆   02197001"></td>
+                        <td rowspan="2" width="20%">
+                            <textarea style="width: 100%; height: 100%" cols="9"
+                                      rows="3">复方血栓胶囊/0.5g*30粒/胶囊剂量/粤众生</textarea>
+                        </td>
+                        <td rowspan="2" width="15%">
+                            <textarea style="width: 100%; height: 100%" cols="9" rows="3">广东众生药业股份有限公司</textarea>
+                        </td>
+                        <td width="5%" rowspan="2"><input type="text" style="width: 65px;" value="1"></td>
+                        <td width="5%" rowspan="2"><input type="text" style="width: 65px;" value="1"></td>
+                        <td width="5%" rowspan="2"><input type="text" style="width: 65px;" value="1"></td>
+                        <td width="5%" rowspan="2"><input type="text" style="width: 65px;" value="1"></td>
+                        <td width="5%" rowspan="2"><input type="text" style="width: 65px;" value="1"></td>
+                        <td width="10%"><input type="text" style="width: 140px;" value="1"></td>
+                        <td width="10%" rowspan="2"><input type="text" style="width: 140px;" value="1"></td>
+                        <td width="10%" rowspan="2"><input type="text" style="width: 140px;" value="1"></td>
                     </tr>
                     <tr>
-                        <td>101005170000229</td>
-                        <td>2019/01/29</td>
+                        <td><input type="text" style="width:140px;" value=""></td>
+                        <td><input type="text" style="width:140px;" value="1"></td>
                     </tr>
-                    <tr>
-                        <td rowspan="2">2</td>
-                        <td>1☆ 02197001</td>
-                        <td rowspan="2">复方血栓胶囊/0.5g*30粒/胶囊剂量/粤众生</td>
-                        <td rowspan="2">广东众生药业股份有限公司</td>
-                        <td rowspan="2">300</td>
-                        <td rowspan="2">盒</td>
-                        <td rowspan="2">30</td>
-                        <td rowspan="2">21.77</td>
-                        <td rowspan="2">653.10</td>
-                        <td>160729</td>
-                        <td rowspan="2">国药准字Z20030017</td>
-                        <td rowspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td>101005170000229</td>
-                        <td>2019/01/29</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">3</td>
-                        <td>1☆ 02197001</td>
-                        <td rowspan="2">复方血栓胶囊/0.5g*30粒/胶囊剂量/粤众生</td>
-                        <td rowspan="2">广东众生药业股份有限公司</td>
-                        <td rowspan="2">300</td>
-                        <td rowspan="2">盒</td>
-                        <td rowspan="2">30</td>
-                        <td rowspan="2">21.77</td>
-                        <td rowspan="2">653.10</td>
-                        <td>160729</td>
-                        <td rowspan="2">国药准字Z20030017</td>
-                        <td rowspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td>101005170000229</td>
-                        <td>2019/01/29</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">4</td>
-                        <td>1☆ 02197001</td>
-                        <td rowspan="2">复方血栓胶囊/0.5g*30粒/胶囊剂量/粤众生</td>
-                        <td rowspan="2">广东众生药业股份有限公司</td>
-                        <td rowspan="2">300</td>
-                        <td rowspan="2">盒</td>
-                        <td rowspan="2">30</td>
-                        <td rowspan="2">21.77</td>
-                        <td rowspan="2">653.10</td>
-                        <td>160729</td>
-                        <td rowspan="2">国药准字Z20030017</td>
-                        <td rowspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td>101005170000229</td>
-                        <td>2019/01/29</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">5</td>
-                        <td>1☆ 02197001</td>
-                        <td rowspan="2">复方血栓胶囊/0.5g*30粒/胶囊剂量/粤众生</td>
-                        <td rowspan="2">广东众生药业股份有限公司</td>
-                        <td rowspan="2">300</td>
-                        <td rowspan="2">盒</td>
-                        <td rowspan="2">30</td>
-                        <td rowspan="2">21.77</td>
-                        <td rowspan="2">653.10</td>
-                        <td>160729</td>
-                        <td rowspan="2">国药准字Z20030017</td>
-                        <td rowspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td>101005170000229</td>
-                        <td>2019/01/29</td>
-                    </tr>
+                    <%--<tr>--%>
+                    <%--<td>1☆ 02197001</td>--%>
+                    <%--<td rowspan="2">复方血栓胶囊/0.5g*30粒/胶囊剂量/粤众生</td>--%>
+                    <%--<td rowspan="2">广东众生药业股份有限公司</td>--%>
+                    <%--<td rowspan="2">300</td>--%>
+                    <%--<td rowspan="2">盒</td>--%>
+                    <%--<td rowspan="2">30</td>--%>
+                    <%--<td rowspan="2">21.77</td>--%>
+                    <%--<td rowspan="2">653.10</td>--%>
+                    <%--<td>160729</td>--%>
+                    <%--<td rowspan="2">国药准字Z20030017</td>--%>
+                    <%--<td rowspan="2"></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                    <%--<td>101005170000229</td>--%>
+                    <%--<td>2019/01/29</td>--%>
+                    <%--</tr>--%>
                     </tbody>
                 </table>
             </fieldset>
