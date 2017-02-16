@@ -165,6 +165,28 @@
     </div>
 </div>
 </div>
+
+<div id="print_html">
+    <table class="table table-bordered table-condensed" contenteditable="true">
+        <thead>
+        <tr>
+            <th style="text-align: center">商品编码/细单号</th>
+            <th style="text-align: center">品名/规格/剂型/产地</th>
+            <th style="text-align: center">生产厂商</th>
+            <th style="text-align: center">包装</th>
+            <th style="text-align: center">单位</th>
+            <th style="text-align: center">数量</th>
+            <th style="text-align: center">销售单价</th>
+            <th style="text-align: center">金额</th>
+            <th style="text-align: center">批号/效期</th>
+            <th style="text-align: center">批准文号</th>
+            <th style="text-align: center">仓库信息</th>
+        </tr>
+        </thead>
+        <tbody id="_print_goods_info">
+        </tbody>
+    </table>
+</div>
 </body>
 <script src="js/print.js"></script>
 </html>
