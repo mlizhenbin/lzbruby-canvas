@@ -12,12 +12,12 @@ $("#addGoods").click(function () {
 
     var goodsHTML =
         ' <tr class="_goods_info"> ' +
-            '<td width="10%"><input type="text" style="width:140px;" value="1☆   02197001"></td>' +
+            '<td width="10%"><input type="text" style="width:140px;" value="☆   "></td>' +
             '<td rowspan="2" width="20%">' +
-                '<textarea style="width: 100%; height: 100%" cols="9" rows="3">复方血栓胶囊/0.5g*30粒/胶囊剂量/粤众生</textarea>'+
+                '<textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea>'+
             '</td>' +
             '<td rowspan="2" width="15%">' +
-                '<textarea style="width: 100%; height: 100%" cols="9" rows="3">广东众生药业股份有限公司</textarea>' +
+                '<textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea>' +
              '</td>' +
             '<td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
             '<td width="5%" rowspan="2"><textarea style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>'+
