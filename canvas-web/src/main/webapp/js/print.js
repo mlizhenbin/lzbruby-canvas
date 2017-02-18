@@ -123,7 +123,7 @@ function buildLodop(printHTML) {
 
     // 3
     var _qh_group_no = $("#_qh_group_no").val();
-    LODOP.ADD_PRINT_TEXT("22mm", "5mm", "50mm", "50mm", "QH单组号:  " + _qh_group_no);
+    LODOP.ADD_PRINT_TEXT("22mm", "5mm", "60mm", "50mm", "QH单组号:  " + _qh_group_no);
     LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _unhouse_warehouse = $("#_unhouse_warehouse").val();
     LODOP.ADD_PRINT_TEXT("22mm", "65mm", "50mm", "50mm", "出库仓库:  " + _unhouse_warehouse);
