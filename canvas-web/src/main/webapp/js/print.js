@@ -356,16 +356,16 @@ function buildPrintHTML() {
         var goodsHTML =
             '<tr class="_show_print_goods_info"> ' +
                 '<td width="12%">' + _goods_code +'</td>' +
-                '<td rowspan="2" width="18%">' + _ping_size_addr +'</td>' +
-                '<td rowspan="2" width="12%">' + _productor + '</td>' +
-                '<td width="5%" rowspan="2">' + _package + '</td>'+
-                '<td width="2%" rowspan="2">' + _unit + '</td>'+
-                '<td width="5%" rowspan="2" style="font-weight: bold; font-size: 13; text-align: right">' + _qrt + '</td>'+
-                '<td width="8%" rowspan="2" style="text-align: right">' + _price + '</td>'+
+                '<td rowspan="2" width="18%" style="vertical-align:top" >' + _ping_size_addr +'</td>' +
+                '<td rowspan="2" width="12%" style="vertical-align:top" >' + _productor + '</td>' +
+                '<td width="5%" rowspan="2" style="vertical-align:top" >' + _package + '</td>'+
+                '<td width="2%" rowspan="2" style="vertical-align:top" >' + _unit + '</td>'+
+                '<td width="5%" rowspan="2" style="font-weight: bold; font-size: 13; text-align: right; vertical-align:top">' + _qrt + '</td>'+
+                '<td width="8%" rowspan="2" style="text-align: right; vertical-align:top">' + _price + '</td>'+
                 '<td width="8%" rowspan="2" style="text-align: right">' + _sale_fee + '</td>'+
-                '<td width="11%" style="font-weight: bold; font-size: 13">' + _banch_no + '</td>'+
-                '<td width="8%" rowspan="2"><span>' + _check_name + '</span><br><span>' + _check_no +'</span></td>'+
-                '<td width="9%" rowspan="2">' + _warehouse_info + '</td>'+
+                '<td width="11%" style="font-weight: bold; font-size: 13;">' + _banch_no + '</td>'+
+                '<td width="8%" rowspan="2" style="vertical-align:top" ><span>' + _check_name + '</span><br><span>' + _check_no +'</span></td>'+
+                '<td width="9%" rowspan="2" style="vertical-align:top" >' + _warehouse_info + '</td>'+
             '</tr>'+
             '<tr class="_show_print_goods_info">'+
                 '<td>' + _detail_no + '&nbsp;</td>'+
