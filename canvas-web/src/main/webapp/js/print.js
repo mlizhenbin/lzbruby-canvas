@@ -57,27 +57,28 @@ $("#print").on("click", function () {
 
 var isIE = (navigator.userAgent.indexOf('MSIE') >= 0) || (navigator.userAgent.indexOf('Trident') >= 0);
 
-function getLodop() {
-    try {
-        var lodopDOM = document.createElement("object");
-        if (isIE) {
-            lodopDOM.setAttribute("classid", "clsid:2105C259-1E0C-4534-8141-A753534CB4CA");
-        } else {
-            lodopDOM.setAttribute("type", "application/x-print-lodop");
-        }
-        lodopDOM.setAttribute("style", "absolute;left:0;top:-200px;width:0;height:0;");
-        document.documentElement.appendChild(lodopDOM);
-        if (lodopDOM.VERSION < "6.1.7.3")
-            window.console && console.log('控件版本应该>=6.1.7.3');
+// function getLodop() {
+//     try {
+//         var lodopDOM = document.createElement("object");
+//         if (isIE) {
+//             lodopDOM.setAttribute("classid", "clsid:2105C259-1E0C-4534-8141-A753534CB4CA");
+//         } else {
+//             lodopDOM.setAttribute("type", "application/x-print-lodop");
+//         }
+//         lodopDOM.setAttribute("style", "absolute;left:0;top:-200px;width:0;height:0;");
+//         document.documentElement.appendChild(lodopDOM);
+//         if (lodopDOM.VERSION < "6.1.7.3")
+//             window.console && console.log('控件版本应该>=6.1.7.3');
+//
+//         return lodopDOM;
+//     } catch (e) {
+//         alert('没有正确安装Lodop打印控件!');
+//         return false;
+//     }
+// }
 
-        return lodopDOM;
-    } catch (e) {
-        alert('没有正确安装Lodop打印控件!');
-        return false;
-    }
-}
-
-function buildLodop(printHTML) {
+function buildLodop() {
+    // var LODOP = getLodop();
     var LODOP = getLodop();
 
     LODOP.PRINT_INIT("销售清单");

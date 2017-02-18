@@ -9,6 +9,7 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/My97DatePicker/WdatePicker.js"></script>
+    <script language="javascript" src="js/LodopFuncs.js"></script>
 
 </head>
 
