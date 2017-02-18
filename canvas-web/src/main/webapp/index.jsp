@@ -104,13 +104,16 @@
                         <td width="5%" rowspan="2"><textarea class="_price" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
                         <td width="5%" rowspan="2"><textarea class="_sale_fee" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
                         <td width="10%"><input class="_banch_no" type="text" style="width: 140px;" value=""></td>
-                        <td width="10%" rowspan="2"><textarea class="_check_no" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
+                        <td width="10%"><input class="_check_name" type="text" value="国药准字"></td>
                         <td width="10%" rowspan="2"><textarea class="_warehouse_info" style="width: 100%; height: 100%" cols="9" rows="3"></textarea></td>
                     </tr>
                     <tr class="_goods_info">
                         <td><input class="_detail_no" type="text" style="width:140px;" value=""></td>
                         <td>
                             <input class="_active_date" type="text" style="width:140px;" value="" onFocus="WdatePicker({dateFmt:'yyyy/MM/dd',alwaysUseStartDate:true})">
+                        </td>
+                        <td>
+                            <input class="_check_no" type="text" value="">
                         </td>
                     </tr>
                     </tbody>
@@ -167,7 +170,7 @@
 </div>
 
 <div id="print_html">
-    <table class="table table-bordered table-condensed" contenteditable="true">
+    <table border="1" style="word-break:break-all; word-wrap:break-all;" class="table table-bordered table-condensed" contenteditable="true">
         <thead>
         <tr>
             <th style="text-align: center">商品编码/细单号</th>
