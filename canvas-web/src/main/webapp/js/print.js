@@ -62,155 +62,155 @@ function buildLodop() {
     LODOP.SET_PRINT_STYLE("FontName", "宋体");
 
     // 标题
-    LODOP.ADD_PRINT_TEXT("6mm", "88mm", "80mm", "20mm", "国药控股桂林有限公司");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);//增大字体11pt
+    LODOP.ADD_PRINT_TEXT("6mm", "92mm", "80mm", "20mm", "国药控股桂林有限公司");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 15);//增大字体11pt
     // LODOP.SET_PRINT_STYLEA(0, "Bold", 1);//加粗
 
     // 1
     var _shot_seri_no = $("#_shot_seri_no").val();
-    LODOP.ADD_PRINT_TEXT("12mm", "12mm", "50mm", "50mm", "短流水号：" );
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("12mm", "26mm", "50mm", "50mm", _shot_seri_no);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+    LODOP.ADD_PRINT_TEXT("12mm", "3mm", "50mm", "50mm", "短流水号：" );
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("12mm", "20mm", "50mm", "50mm", _shot_seri_no);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 11);
     LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
-    LODOP.ADD_PRINT_TEXT("12mm", "104mm", "50mm", "50mm", "销售清单");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 12);
+    LODOP.ADD_PRINT_TEXT("12mm", "108mm", "50mm", "50mm", "销售清单");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 13);
     // LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
-    LODOP.ADD_PRINT_TEXT("12mm", "173mm ", "50mm", "50mm", "第一页/共1页");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+    LODOP.ADD_PRINT_TEXT("12mm", "177mm ", "50mm", "50mm", "第一页/共1页");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 11);
     LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
-    LODOP.ADD_PRINT_TEXT("12mm", "211mm", "50mm", "50mm", "R");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 12);
+    LODOP.ADD_PRINT_TEXT("12mm", "220mm", "50mm", "50mm", "R");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 13);
     LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
 
     // 2
     var _order_group_no = $("#_order_group_no").val();
-    LODOP.ADD_PRINT_TEXT("17mm", "12mm", "50mm", "50mm", "订单组号：");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("17mm", "26mm", "80mm", "50mm", _order_group_no);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+    LODOP.ADD_PRINT_TEXT("17mm", "3mm", "50mm", "50mm", "订单组号：");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("17mm", "20mm", "80mm", "50mm", _order_group_no);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 11);
     LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
     var _sale_area = $("#_sale_area").val();
-    LODOP.ADD_PRINT_TEXT("17mm", "60mm", "50mm", "50mm", "销售区域：" + _sale_area);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("17mm", "61mm", "50mm", "50mm", "销售区域：" + _sale_area);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _invoice_no = $("#_invoice_no").val();
-    LODOP.ADD_PRINT_TEXT("17mm", "173mm", "50mm", "50mm", "发票号码：" + _invoice_no);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("17mm", "177mm", "50mm", "50mm", "发票号码：" + _invoice_no);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
 
     // 3
     var _qh_group_no = $("#_qh_group_no").val();
-    LODOP.ADD_PRINT_TEXT("22mm", "12mm", "60mm", "50mm", "QH单组号：" + _qh_group_no);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("22mm", "3mm", "60mm", "50mm", "QH单组号：" + _qh_group_no);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _unhouse_warehouse = $("#_unhouse_warehouse").val();
-    LODOP.ADD_PRINT_TEXT("22mm", "60mm", "50mm", "50mm", "出库仓库：" + _unhouse_warehouse);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("22mm", "61mm", "50mm", "50mm", "出库仓库：" + _unhouse_warehouse);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _busi_type = $("#_busi_type").val();
-    LODOP.ADD_PRINT_TEXT("22mm", "102mm", "50mm", "50mm", "业务类型：" + _busi_type);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("22mm", "106mm", "50mm", "50mm", "业务类型：" + _busi_type);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
 
     var _total_orders = $("#_total_orders").val();
-    LODOP.ADD_PRINT_TEXT("22mm", "138mm", "50mm", "50mm", "总 笔 数：" + _total_orders);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("22mm", "144mm", "50mm", "50mm", "总 笔 数：" + _total_orders);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _total_fee = $("#_total_fee").val();
-    LODOP.ADD_PRINT_TEXT("22mm", "173mm", "50mm", "50mm", "总 金 额：");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("22mm", "187mm", "50mm", "50mm", _total_fee);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+    LODOP.ADD_PRINT_TEXT("22mm", "177mm", "50mm", "50mm", "总 金 额：");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("22mm", "194mm", "50mm", "50mm", _total_fee);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 11);
     LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
 
     // 4
     var _consume_name = $("#_consume_name").val();
-    LODOP.ADD_PRINT_TEXT("27mm", "12mm", "80mm", "50mm", "客    户：" + _consume_name);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("27mm", "3mm", "80mm", "50mm", "客    户：" + _consume_name);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _transport_type = $("#_transport_type").val();
-    LODOP.ADD_PRINT_TEXT("27mm", "102mm", "50mm", "50mm", "运输方式：" + _transport_type);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("27mm", "106mm", "50mm", "50mm", "运输方式：" + _transport_type);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _pay_type = $("#_pay_type").val();
-    LODOP.ADD_PRINT_TEXT("27mm", "138mm", "50mm", "50mm", "付款方式：" + _pay_type);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("27mm", "144mm", "50mm", "50mm", "付款方式：" + _pay_type);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _unhouse_datetime = $("#_unhouse_datetime").val();
-    LODOP.ADD_PRINT_TEXT("27mm", "173mm", "70mm", "50mm", "出库日期：" + _unhouse_datetime);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("27mm", "177mm", "70mm", "50mm", "出库日期：" + _unhouse_datetime);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
 
     // 5
     var _send_address = $("#_send_address").val();
-    LODOP.ADD_PRINT_TEXT("32mm", "12mm", "100mm", "50mm", "送货地址：" + _send_address);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("32mm", "3mm", "100mm", "50mm", "送货地址：" + _send_address);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _cotanct_persion = $("#_cotanct_persion").val();
-    LODOP.ADD_PRINT_TEXT("32mm", "102mm", "70mm", "50mm", "联 系 人：" + _cotanct_persion);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("32mm", "106mm", "70mm", "50mm", "联 系 人：" + _cotanct_persion);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _make_order_date = $("#_make_order_date").val();
-    LODOP.ADD_PRINT_TEXT("32mm", "173mm", "50mm", "50mm", "制单日期：" + _make_order_date);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("32mm", "177mm", "50mm", "50mm", "制单日期：" + _make_order_date);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
 
     // table
     var strBodyStyle = '<style>table,td { border: 1 solid #000000;border-collapse:collapse;font-size: 12px }</style>';
     var strFormHtml = strBodyStyle + "<body>" + document.getElementById("print_html").innerHTML + "</body>";
-    LODOP.ADD_PRINT_HTM("37mm", "12mm", "202mm", "139mm", strFormHtml);
+    LODOP.ADD_PRINT_HTM("37mm", "3mm", "225mm", "225mm", strFormHtml);
 
 
     // 6
     var _cal_total_ZN = $("#_cal_total_ZN").val();
     var _order_group_no = $("#_order_group_no").val();
-    LODOP.ADD_PRINT_TEXT("105mm", "12mm", "50mm", "100mm", "本页合计人民币(大写)  ");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("105mm", "44mm", "100mm", "100mm", _cal_total_ZN);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+    LODOP.ADD_PRINT_TEXT("115mm", "3mm", "50mm", "100mm", "本页合计人民币（大写） ");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("115mm", "42mm", "100mm", "100mm", _cal_total_ZN);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 11);
     LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
     var _cal_total_en = $("#_cal_total_en").val();
-    LODOP.ADD_PRINT_TEXT("105mm", "138mm", "100mm", "100mm", "小    写：");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("105mm", "153mm", "100mm", "100mm", _cal_total_en);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+    LODOP.ADD_PRINT_TEXT("115mm", "144mm", "100mm", "100mm", "小    写：");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("115mm", "161mm", "100mm", "100mm", _cal_total_en);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 11);
     LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
 
     // 7
     var _consumer_sgin = $("#_consumer_sgin").val();
-    LODOP.ADD_PRINT_TEXT("110mm", "12mm", "50mm", "50mm", "客户签收：" + _consumer_sgin);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("120mm", "3mm", "50mm", "50mm", "客户签收：" + _consumer_sgin);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _consumer_date = $("#_consumer_date").val();
-    LODOP.ADD_PRINT_TEXT("110mm", "44mm", "50mm", "50mm", "签收日期：" + _consumer_date);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("120mm", "42mm", "50mm", "50mm", "签收日期：" + _consumer_date);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _check_person = $("#_check_person").val();
-    LODOP.ADD_PRINT_TEXT("110mm", "76mm", "50mm", "50mm", "复 核 员：" + _check_person);
+    LODOP.ADD_PRINT_TEXT("120mm", "78mm", "50mm", "50mm", "复 核 员：" + _check_person);
     var _store_person = $("#_store_person").val();
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("110mm", "105mm", "50mm", "50mm", "保 管 员：" + _store_person);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("120mm", "110mm", "50mm", "50mm", "保 管 员：" + _store_person);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _make_order_person = $("#_make_order_person").val();
-    LODOP.ADD_PRINT_TEXT("110mm", "138mm", "50mm", "50mm", "制 单 人：" + _make_order_person);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("120mm", "144mm", "50mm", "50mm", "制 单 人：" + _make_order_person);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _busi_order_person = $("#_busi_order_person").val();
-    LODOP.ADD_PRINT_TEXT("110mm", "170mm", "50mm", "50mm", "业 务 员：" + _busi_order_person);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("120mm", "182mm", "50mm", "50mm", "业 务 员：" + _busi_order_person);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
 
     // 8
     var _transport_condition = $("#_transport_condition").val();
-    LODOP.ADD_PRINT_TEXT("115mm", "12mm", "50mm", "50mm", "运输条件：" + _transport_condition);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("125mm", "3mm", "50mm", "50mm", "运输条件：" + _transport_condition);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _remark = $("#_remark").val();
-    LODOP.ADD_PRINT_TEXT("115mm", "44mm", "50mm", "50mm", "备    注：" + _remark);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("125mm", "42mm", "50mm", "50mm", "备    注：" + _remark);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _send_person = $("#_send_person").val();
-    LODOP.ADD_PRINT_TEXT("115mm", "105mm", "50mm", "50mm", "送 货 员：" + _send_person);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("125mm", "110mm", "50mm", "50mm", "送 货 员：" + _send_person);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
     var _send_time = $("#_send_time").val();
-    LODOP.ADD_PRINT_TEXT("115mm", "138mm", "50mm", "50mm", "运货时间：" + _send_time);
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("125mm", "144mm", "50mm", "50mm", "运货时间：" + _send_time);
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
 
     // 9
-    LODOP.ADD_PRINT_TEXT("120mm", "12mm", "50mm", "50mm", "一式五联");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("120mm", "25mm", "50mm", "50mm", "(1)白色：客户签收联");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("120mm", "57mm", "50mm", "50mm", "(2)蓝色：客户存查联");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("120mm", "89mm", "50mm", "50mm", "(3)绿色：随货同行联");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("120mm", "121mm", "50mm", "50mm", "(4)红色：业务存查联");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
-    LODOP.ADD_PRINT_TEXT("120mm", "153mm", "50mm", "50mm", "(5)黄色：仓储存查联  工作区域：");
-    LODOP.SET_PRINT_STYLEA(0, "FontSize", 8);
+    LODOP.ADD_PRINT_TEXT("130mm", "3mm", "50mm", "50mm", "一式五联");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("130mm", "18mm", "50mm", "50mm", "(1)白色：客户签收联");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("130mm", "52mm", "50mm", "50mm", "(2)蓝色：客户存查联");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("130mm", "87mm", "50mm", "50mm", "(3)绿色：随货同行联");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("130mm", "121mm", "50mm", "50mm", "(4)红色：业务存查联");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
+    LODOP.ADD_PRINT_TEXT("130mm", "155mm", "80mm", "50mm", "(5)黄色：仓储存查联 工作区域：");
+    LODOP.SET_PRINT_STYLEA(0, "FontSize", 10);
 
 
     return LODOP;
@@ -331,21 +331,21 @@ function buildPrintHTML() {
 
         var goodsHTML =
             '<tr class="_show_print_goods_info"> ' +
-                '<td width="10%">' + _goods_code +'</td>' +
-                '<td width="16%" rowspan="2" style="font-size: 10;vertical-align:top" >' + _ping_size_addr +'</td>' +
-                '<td width="8%" rowspan="2"  style="font-size: 10;vertical-align:top" >' + _productor + '</td>' +
-                '<td width="4%" rowspan="2"  style="font-size: 10;vertical-align:top; text-align: center" >' + _package + '</td>'+
-                '<td width="2%" rowspan="2"  style="font-size: 10;vertical-align:top" >' + _unit + '</td>'+
-                '<td width="5%" rowspan="2"  style="font-size: 10;font-weight: bold; font-size: 12; text-align: right; vertical-align:top">' + _qrt + '</td>'+
-                '<td width="7%" rowspan="2"  style="font-size: 10;text-align: right; vertical-align:top">' + _price + '</td>'+
-                '<td width="7%" rowspan="2"  style="font-size: 10;text-align: right">' + _sale_fee + '</td>'+
-                '<td width="9%" style="font-weight: bold; font-size: 12;">' + _banch_no + '</td>'+
-                '<td width="7%" rowspan="2"  style="font-size: 10; vertical-align:top" ><span>' + _check_name + '</span><br><span>' + _check_no +'</span></td>'+
-                '<td width="7%" rowspan="2"  style="font-size: 10; vertical-align:top" >' + _warehouse_info + '</td>'+
+                '<td width="13%">' + _goods_code +'</td>' +
+                '<td width="18%" rowspan="2" style="font-size: 12; vertical-align:top" >' + _ping_size_addr +'</td>' +
+                '<td width="8%" rowspan="2"  style="font-size: 12; vertical-align:top" >' + _productor + '</td>' +
+                '<td width="4%" rowspan="2"  style="font-size: 12; vertical-align:top; text-align: center" >' + _package + '</td>'+
+                '<td width="3%" rowspan="2"  style="font-size: 12; vertical-align:top" >' + _unit + '</td>'+
+                '<td width="5%" rowspan="2"  style="font-size: 13; vertical-align:top; font-weight: bold; text-align: right;">' + _qrt + '</td>'+
+                '<td width="7%" rowspan="2"  style="font-size: 12; vertical-align:top; text-align: right; ">' + _price + '</td>'+
+                '<td width="7%" rowspan="2"  style="font-size: 12; vertical-align:top; text-align: right">' + _sale_fee + '</td>'+
+                '<td width="12%" style="font-weight: bold; font-size: 13;">' + _banch_no + '</td>'+
+                '<td width="9%" rowspan="2"  style="font-size: 12; vertical-align:top" ><span>' + _check_name + '</span><br><span>' + _check_no +'</span></td>'+
+                '<td width="10%" rowspan="2"  style="font-size: 12; vertical-align:top" >' + _warehouse_info + '</td>'+
             '</tr>'+
             '<tr class="_show_print_goods_info">'+
-                '<td style="font-size: 10;">' + _detail_no + '&nbsp;</td>'+
-                '<td style="font-size: 10;">' + _active_date + '</td>'+
+                '<td style="font-size: 11;">' + _detail_no + '&nbsp;</td>'+
+                '<td style="font-size: 11;">' + _active_date + '</td>'+
             '</tr>';
 
         $("#_print_goods_info").append(goodsHTML);

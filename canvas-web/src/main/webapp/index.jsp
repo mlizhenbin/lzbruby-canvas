@@ -173,18 +173,18 @@
 <div id="print_html">
     <table border="1" style="word-break:break-all; word-wrap:break-all;" class="table table-bordered table-condensed" contenteditable="true" width="100%">
         <thead>
-        <tr>
-            <th style="text-align: center;font-size: 10">商品编码/细单号</th>
-            <th style="text-align: center;font-size: 10">品名/规格/剂型/产地</th>
-            <th style="text-align: center;font-size: 10">生产厂商</th>
-            <th style="text-align: center;font-size: 10">包装</th>
-            <th style="text-align: center;font-size: 10">单位</th>
-            <th style="text-align: center;font-size: 10">数量</th>
-            <th style="text-align: center;font-size: 10">销售单价</th>
-            <th style="text-align: center;font-size: 10">金额</th>
-            <th style="text-align: center;font-size: 10">批号/效期</th>
-            <th style="text-align: center;font-size: 10">批准文号</th>
-            <th style="text-align: center;font-size: 10">仓库信息</th>
+        <tr style="height: 32px;">
+            <th style="text-align: center;font-size: 12">商品编码/细单号</th>
+            <th style="text-align: center;font-size: 12">品名/规格/剂型/产地</th>
+            <th style="text-align: center;font-size: 12">生产厂商</th>
+            <th style="text-align: center;font-size: 12">包装</th>
+            <th style="text-align: center;font-size: 12">单<br>位</th>
+            <th style="text-align: center;font-size: 12">数量</th>
+            <th style="text-align: center;font-size: 12">销售单价</th>
+            <th style="text-align: center;font-size: 12">金额</th>
+            <th style="text-align: center;font-size: 12">批号/效期</th>
+            <th style="text-align: center;font-size: 12">批准文号</th>
+            <th style="text-align: center;font-size: 12">仓库信息</th>
         </tr>
         </thead>
         <tbody id="_print_goods_info">
